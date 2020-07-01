@@ -1,0 +1,19 @@
+@font-face {
+  font-weight: 400;
+  font-family: "OpenSans-Italic";
+  font-style: italic;
+  font-display: swap;
+  src: local("OpenSans-Italic"),
+  url("../fonts/OpenSans-Italic.woff2") format("woff2"),
+  url("../fonts/OpenSans-Italic.woff") format("woff"),
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: "OpenSans-SemiBold";
+  font-style: normal;
+  font-display: swap;
+  src: local("OpenSans-SemiBold"),
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff"),
+}

@@ -1,0 +1,136 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-size: $basic-font-size;
+  line-height: 1.42;
+  font-family: $main-font-family;
+  color: $primary-color-font;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include tablet-width-only {
+    max-width: 750px;
+  }
+
+  @include mobile-width-only {
+    max-width: 320px;
+  }
+}
+
+.overlay {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+  }
+}
+.no-scroll {
+  overflow-y: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+table {
+  border-spacing: 0;
+}
+
+blockquote {
+  margin: 0;
+}
+
+td {
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+}
+
+.picture-wrp {
+  font-size: 0;
+}
